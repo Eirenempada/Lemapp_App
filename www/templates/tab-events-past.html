@@ -1,0 +1,44 @@
+<ion-view view-title=""><!-- A PROPOS -->
+    <ion-nav-buttons side="secondary">
+        <button type="button" ng-controller="LogoutCtrl" ng-click="logout()" class="button">Déconnexion</button>
+    </ion-nav-buttons>
+    <ion-content>  
+            <div id='issuesListContainer' ng-controller="eventsPastController">
+
+                <div class="card">
+                    <div class="item item-text-wrap">
+                        <h2>Comment utiliser Lemapp ?</h2>
+                        <p>L’onglet « Carte des événements » répertorie les discussions à thème Lemapp proposées autour de toi. Celles-ci sont signalées par un marqueur de couleur. La couleur du marqueur indique la grande catégorie à laquelle appartient la discussion à thème. Six couleurs sont disponibles : </p>
+                    </div>
+                    <div class="item item-avatar">
+                        <img src="img/markers/nat.png">
+                        <p>Nature et Découvertes</p>
+                    </div>
+                    <div class="item item-avatar">
+                        <img src="img/markers/sci.png">
+                        <p>Science et Médecine</p>
+                    </div>
+                    <div class="item item-avatar">
+                        <img src="img/markers/tech.png">
+                        <p>Technologie et Jeux Vidéo</p>
+                    </div>
+                    <div class="item item-avatar">
+                            <img src="img/markers/eco.png">
+                            <p>Économie et Politique</p>
+                    </div>
+                    <div class="item item-avatar">
+                            <img src="img/markers/div.png">
+                            <p>Divertissement</p>
+                    </div>
+                    <div class="item item-avatar">
+                            <img src="img/markers/cult.png">
+                            <p>Culture, Art et Histoire</p>
+                        </a>
+                    </div>
+                    <div class="item item-text-wrap">
+                        <p>Tu peux ainsi repérer très rapidement les événements susceptibles de t’intéresser. En cliquant sur le marqueur de couleur, tu peux en apprendre plus sur le sujet précis de la discussion à thème, l’heure et le lieu. Tu peux retrouver cet événement dans l’onglet « Liste des événements ». Dans les deux cas, tu n’as besoin que d’un seul clic pour t’inscrire (ou te désinscrire). Tu recevras ensuite une confirmation de participation à l’événement. Si le nombre minimal de participants n’est pas atteint, une notification t’informera que l’événement choisi n’aura pas lieu. Si l’événement a bel et bien lieu, il ne te reste qu’à t’y rendre pour découvrir les autres participants et créer de nouvelles amitiés !</p>  
+                    </div>
+                </div>
+            </div>
+    </ion-content>
+</ion-view>

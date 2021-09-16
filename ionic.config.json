@@ -1,0 +1,10 @@
+{
+  "name": "HaveaTalk",
+  "app_id": "8c02ce9f",
+  "proxies": [
+    {
+      "path": "/api-proxy",
+      "proxyUrl": "https://haveatalk.herokuapp.com/api"
+    }
+  ]
+}

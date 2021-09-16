@@ -1,0 +1,27 @@
+<ion-view view-title=""><!--LISTE DES EVENEMENTS-->
+    <ion-nav-buttons side="secondary">
+        <button type="button" ng-controller="LogoutCtrl" ng-click="logout()" class="button">Déconnexion</button>
+    </ion-nav-buttons>
+    <ion-content>
+        <div id='eventsListContainer' ng-controller="eventsListController">
+            <div class='card' ng-repeat='event in events' value="{{event.id}}" ng-click="goDetail(event)">
+                <!--option générée sur la base de l'API-->
+                <div class="item item-avatar">
+                    <img src="{{event.categoryId.catLogoUrl}}">
+                    <img class="icon" src="img/tick_green.png" ng-if="event.userId[0] === currentUserId">
+                    <img class="icon" src="img/tick_green.png" ng-if="event.userId[1] === currentUserId">
+                    <img class="icon" src="img/tick_green.png" ng-if="event.userId[2] === currentUserId">
+                    <img class="icon" src="img/tick_green.png" ng-if="event.userId[3] === currentUserId">
+                    <img class="icon" src="img/tick_green.png" ng-if="event.userId[4] === currentUserId">
+                    <img class="icon" src="img/tick_green.png" ng-if="event.userId[5] === currentUserId">
+                    <img class="icon" src="img/tick_green.png" ng-if="event.userId[6] === currentUserId">
+                    <h1>{{event.subject}}</h1>
+                    <h2>{{event.category}}</h2>
+                    <p>{{event.date | date: 'EEEE d MMMM à HH:mm'}}</p>
+                    <h3>{{event.placeId.name}}</h3>
+                    <p>{{event.placeId.address}}</p>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

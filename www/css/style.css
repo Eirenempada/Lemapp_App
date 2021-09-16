@@ -1,0 +1,130 @@
+/* Empty. Add your own CSS if you like */
+@font-face {
+    font-family: 'mistral';
+    src:url('../fonts/mistral.ttf');
+    src:url('../fonts/mistral.woff') format('woff'),
+        url('../fonts/mistral.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+html, body, #map, .scroll {
+    height: 100%;
+}
+
+#eventsMap{
+	height: 100%;
+}
+.banner{
+	margin-top: 30px;
+	padding:30px;
+}
+
+.leaflet-popup-content h1{
+	font-size: 24px;
+}
+
+.leaflet-popup-content h2{
+	font-size: 22px;
+}
+
+#login-form .button-positive{
+	background-color: #792432;
+}
+
+#login-form .button-outline{
+	border-color: #792432;
+	color: #792432;
+}
+#register-form .button-positive{
+	background-color: #792432;
+}
+
+#register-form .checkbox input:checked::before, .checkbox input:checked + .checkbox-icon::before{
+	background-color: #792432;
+	border-color: #792432;
+}
+
+ion-tabs.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-color-active-positive .tab-item.active, ion-tabs.tabs-color-active-positive .tab-item.activated{
+	color: #792432 !important;
+}
+
+.tab-item.tab-item-active, .tab-item.active, .tab-item.activated {
+    color: #792432 !important;
+    border-color: #792432 !important;
+}
+
+#eventsListContainer h1{
+	font-size: 20px;
+	margin: 0px;
+}
+#eventsListContainer h2{
+	font-size: 16px;
+	margin: 0px;
+}
+
+#eventsListContainer .icon{
+	position: absolute;
+	width: 36px;
+	top: 80px;
+	left: 16px;
+}
+
+#eventDetailCard .button-positive{
+	background-color: #792432;
+}
+
+#eventDetailCard h1{
+	font-size: 20px;
+	margin: 0px;
+}
+
+#eventDetailCard h2{
+	font-size: 16px;
+	margin: 0px;
+}
+
+.leaflet-popup-content h1{
+	font-size: 20px;
+	margin: 0px;
+}
+
+.leaflet-popup-content h2{
+	font-size: 16px;
+	//margin: 0px;
+}
+.leaflet-popup-content p{
+	//font-size: 16px;
+	margin: 0px !important;
+}
+
+.popup .popup-buttons .button{
+	background-color: #792432;
+}
+
+.item-avatar > img:first-child, .item-avatar .item-image, .item-avatar .item-content > img:first-child, .item-avatar .item-content .item-image, .item-avatar-left > img:first-child, .item-avatar-left .item-image, .item-avatar-left .item-content > img:first-child, .item-avatar-left .item-content .item-image{
+	max-width: 34px;
+}
+
+#issuesListContainer .item-avatar p{
+	margin-top: 12px;
+}
+
+#issuesListContainer .item-text-wrap p{
+	text-align: justify;
+}
+
+.mistral{
+	font-family: mistral;
+	text-align: center;
+	font-size: 36px;
+	color: #696969;
+}
+
+p{
+	text-align: justify;
+}

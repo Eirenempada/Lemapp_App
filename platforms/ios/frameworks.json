@@ -1,0 +1,12 @@
+{
+    "CoreLocation.framework": 2,
+    "CoreBluetooth.framework": 2,
+    "AVFoundation.framework": 2,
+    "Photos.framework": 2,
+    "AddressBook.framework": 2,
+    "EventKit.framework": 2,
+    "libsqlite3.dylib": 1,
+    "Social.framework": 1,
+    "Accounts.framework": 1,
+    "Security.framework": 1
+}

@@ -1,0 +1,48 @@
+<ion-view view-title="">
+  <ion-content class="padding">
+    <div class="row">
+      <div class="col col-25"></div>
+      <div class="col col-50 banner">
+        
+        <img class="" src="img/logo_lemapp.png" width="60px" alt="Lemapp" style="margin-left: auto; margin-right: auto; display: block;"/>
+        <h1 class="mistral">Lemapp</h1>
+      </div>
+      <div class="col col-25"></div>
+    </div>
+
+
+    <!-- A short welcome message. -->
+    <div class="card">
+      <div class="item item-text-wrap">
+        <p>Bienvenue sur Lemapp ! Cette application nécessite une connexion Internet ainsi que le GPS de votre téléphone. Nous vous souhaitons d'avoir de passionnantes rencontres et dicussions !</p>
+      </div>
+    </div>
+
+    <!-- The login form that the citizen must fill. -->
+    <form name="loginForm" id="login-form">
+
+      <!-- Ionic uses lists to group related input elements. -->
+      <div class="list">
+        <label class="item item-input">
+          <!-- Note the required="required" attribute used for validation. -->
+          <input type="email" placeholder="Email" ng-model="user.email" required="required"/>
+        </label>
+        <label class="item item-input">
+          <input type="password" placeholder="Mot de passe" ng-model="user.password" required="required"/>
+        </label>
+      </div>
+
+      <!-- Display an error message here, above the submit button, if an error occurred. -->
+      <p ng-if="error" class="error">{{ error }}</p>
+
+      <!--
+        The submit button.
+        The "ng-click" directive indicates which scope function to call when the form is submitted.
+        The "ng-disabled" directive is used to disable the button if the form is invalid (i.e. the first name or last name is missing).
+      -->
+      <button class="button button-full button-positive" ng-click="login()" ng-disabled="loginForm.$invalid">Se connecter</button>
+      <button class="button button-full button-outline" ui-sref="register()">S'inscrire</button>
+      <a class="facebook-sign-in button button-block" ng-click="facebookSignIn()">Login with Facebook</a>
+    </form>
+  </ion-content>
+</ion-view>

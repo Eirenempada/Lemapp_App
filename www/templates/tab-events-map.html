@@ -1,0 +1,11 @@
+<ion-view view-title=""><!-- CARTE DES EVENEMENTS -->
+	<ion-nav-buttons side="secondary">
+        <button type="button" ng-controller="LogoutCtrl" ng-click="logout()" class="button">Déconnexion</button>
+    </ion-nav-buttons>
+  	<ion-content>
+		<div id="eventsMap" ng-if="mapEnabled" style="height: 100%">
+			<leaflet defaults="mapDefaults" center="mapCenter" map="mapDefaults" markers="mapMarkers" height="100%" data-tap-disabled="true"></leaflet>
+			
+		</div>
+  	</ion-content>
+</ion-view>

@@ -1,0 +1,45 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "ch.lemapp.lemapp"
+        },
+        "cordova-plugin-facebook4": {
+            "APP_ID": "1600768386897546",
+            "APP_NAME": "Lemapp",
+            "PACKAGE_NAME": "ch.lemapp.lemapp"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "ch.lemapp.lemapp"
+        },
+        "cordova-plugin-request-location-accuracy": {
+            "PACKAGE_NAME": "ch.lemapp.lemapp"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "ch.lemapp.lemapp"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "ch.lemapp.lemapp"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "ch.lemapp.lemapp"
+        },
+        "cordova.plugins.diagnostic": {
+            "PACKAGE_NAME": "ch.lemapp.lemapp"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "ch.lemapp.lemapp"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "ch.lemapp.lemapp"
+        }
+    }
+}

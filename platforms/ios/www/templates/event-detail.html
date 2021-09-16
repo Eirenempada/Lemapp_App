@@ -1,0 +1,32 @@
+<ion-view view-title="A propos...">
+	<ion-nav-buttons side="primary">
+        <button type="button" ng-controller="backCtrl" ng-click="backPreviousView()" class="button"><i class="ion-arrow-left-c"></i> Back</button>
+    </ion-nav-buttons>
+	<ion-nav-buttons side="secondary">
+        <button type="button" ng-controller="LogoutCtrl" ng-click="logout()" class="button">Déconnexion</button>
+    </ion-nav-buttons>
+	<ion-content class="padding">
+	    <div ng-controller="eventsDetailController" id="eventDetailCard" class="card">
+	    	<div class="card">
+	    		<div class="item item-avatar">
+	    			<img ng-src="{{currentEventDetail.categoryId.catLogoUrl}}"> 
+	    			<h1>{{currentEventDetail.subject}}</h1>
+	    			<h2>{{currentEventDetail.categoryId.name}}</h2>
+	    		</div>
+	    		<div class="item item-body">
+	    			<img class="full-image" ng-src="{{currentEventDetail.imgurl}}" width="100%" ng-alt="{{currentEventDetail.subject}}">				    	
+			    	<h3>{{currentEventDetail.date | date: 'd EEEE MMMM à HH:mm'}}</h3>
+					<p>{{currentEventDetail.description}}</p>
+					<button class="button button-full button-positive" ng-if="showRemoveUser" ng-click="removeUser2Event()">Se retirer de l'événement</button>
+					<button class="button button-full button-positive" ng-if="showAddUser" ng-click="addUser2Event()">Rejoindre l'événement</button>
+				</div>
+				<div class="item item-body">
+	    			<img class="full-image" ng-src="{{currentEventDetail.placeId.banner}}" width="100%" ng-alt="{{currentEventDetail.placeId.name}}">	
+			    	<h2>{{currentEventDetail.placeId.name}}</h2>
+			    	<p>{{currentEventDetail.placeId.address}}</p>
+					<p>{{currentEventDetail.placeId.description}}</p>
+				</div>
+	    	</div>
+	    </div>
+	</ion-content>
+</ion-view>
